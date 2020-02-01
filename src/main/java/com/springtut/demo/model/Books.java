@@ -31,11 +31,11 @@ public class Books {
         this.id = id;
     }
 
-    public Books(String title, String isbn, String publishers, Set<Author> books) {
+    public Books(String title, String isbn, String publishers) {
         this.title = title;
         this.isbn = isbn;
         this.publishers = publishers;
-        this.authors = books;
+
     }
 
     public String getTitle() {
@@ -66,8 +66,8 @@ public class Books {
         return authors;
     }
 
-    public void setAuthors(Set<Author> books) {
-        this.authors = books;
+    public void setAuthors(Set<Author> authors) {
+        this.authors = authors;
     }
 
     @Override
